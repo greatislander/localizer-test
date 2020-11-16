@@ -1,0 +1,28 @@
+name: Update POT file
+
+on:
+  push:
+    branches:
+    - main
+    paths:
+    - '**.php'
+    - '**.js'
+
+jobs:
+  update-pot:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Update POT file
+      uses: pressbooks/action-pressbooks-make-pot@main
+      with:
+        path: './languages'
+        slug: 'localizer-test'
+        textdomain: 'localizer-test'
+        name: 'localizer-test'
+        headers: "{\"Report-Msgid-Bugs-To\":\"https://github.com/greatislander/localizer-test/issues\"}"
+        excludes: "dist,node_modules"
+    - name: Commit updated POT file
+      uses: stefanzweifel/git-auto-commit-action@v4.1.1
+      with:
+        commit_message: 'chore: update languages/localizer-test.pot'
