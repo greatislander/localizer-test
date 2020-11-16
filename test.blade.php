@@ -1,0 +1,1 @@
+{{ __('Test', 'localizer-test') }}
