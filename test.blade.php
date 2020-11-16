@@ -1,1 +1,1 @@
-{{ __('Test', 'localizer-test') }}
+{{ __('Test test', 'localizer-test') }}
