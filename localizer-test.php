@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     Localizer Test
  * Plugin URI:      PLUGIN SITE HERE
- * Description:     PLUGIN DESCRIPTION HERE
+ * Description:     Testing localization.
  * Author:          YOUR NAME HERE
  * Author URI:      YOUR SITE HERE
  * Text Domain:     localizer-test
