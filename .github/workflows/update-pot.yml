@@ -16,7 +16,7 @@ jobs:
     - name: Update POT file
       uses: pressbooks/action-pressbooks-make-pot@main
       with:
-        path: './languages'
+        savepath: './languages'
         slug: 'localizer-test'
         textdomain: 'localizer-test'
         name: 'localizer-test'
